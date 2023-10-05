@@ -7,15 +7,13 @@
     <!-- Setup all meta-information like description and titles -->
     <meta
       name="description"
-      content="The Workshop on Mechanistic Interpretability seeks to explore and drive discussions on the latest advances in interpretable machine learning models. We invite submissions of
-      research, technological breakthroughs and demonstrations, as well as proposals for technical
-      discussions, to be held during the workshop."
+      content="The workshop on the scaling behavior of large language models invites researchers to submit projects that uncover scaling laws, with a specific foucs on inverse scaling laws, in large language models."
     />
     <meta
       name="keywords"
-      content="NeurIPS, Mechanistic Interpretability, Workshop"
+      content="Scaling laws, mechanistic interpretability, workshop"
     />
-    <meta name="author" content="NeurIPS 2023 Mechanistic Interpretability" />
+    <meta name="author" content="Scaling laws workshop 2024" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Load fonts Gothic A1 -->
@@ -30,200 +28,190 @@
   <body>
     <!-- Header with a background color filling approx. 300px and that has a title of the workshop and the date as a byline -->
     <header>
-      <h1 class="fade-in">NeurIPS Mechanistic Interpretability Workshop</h1>
-      <p class="fade-in">December 11th, 2023</p>
+      <h1 class="fade-in">Workshop on the Scaling Behavior of Large Language Models</h1>
+      <p class="fade-in">Date</p>
+      <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     </header>
     <!-- Content on white background with sections Overview, Schedule, Speakers and Organizing Committee -->
     <main class="fade-in">
-      <section>
+      <section class="markdown">
+## Introduction
+        
+        Neural Language Models generally seem to adhere
+to positive scaling laws: increasing the model size
+(in terms of the number of parameters, training data
+and training compute) predictably reduces tokenprediction
+training loss, which in turn is a good predictor
+of performance in many downstream tasks
+(Kaplan et al., 2020; Hernandez et al., 2021; Hoffmann
+et al., 2022; Nijkamp et al., 2022). This
+scaling behavior has lead to Large Language Models
+(LLMs) becoming the dominant paradigm in
+Natural Language Processing, prompting speculations
+about all tasks becoming eventually solved
+by sufficiently large models. Sutton (2019) has
+called this the "Bitter Lesson" of AI research: simple
+models at scale tend to outperform attempts to
+implement more complex algorithms that reflect
+mental models of how we solve problems.
 
-        <h2>Introduction</h2>
-        <p>Even though ever larger and more capable machine learning models are being
-          deployed in real-world settings, we still know concerningly little about how large neural networks
-          implement many seemingly impressive capabilities. This in turn can make it difficult to reason
-          about or address cases where said models exhibit undesirable behavior. One emerging approach for
-          understanding the internals of neural networks is mechanistic interpretability: reverse engineering
-          the algorithms implemented by neural networks into human-understandable mechanisms, often by
-          examining the weights and activations of neural networks to identify circuits [<a href="https://distill.pub/2020/circuits">Cammarata et al., 2020</a>, 
-          <a href="https://transformer-circuits.pub/2021/framework/index.html">Elhage et al., 2021</a>] that implement particular behaviors.</p>
-          
-          <p>In the past two years, the subfield has seen rapid progress, despite its inherent challenge. For example,
-          researchers have used newly developed mechanistic interpretability techniques to recover how large
-          language models implement particular behaviors [<a href="https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et al., 2021</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://arxiv.org/abs/2209.11895">Olsson et al.,
-          2022</a>, <a href="https://arxiv.org/abs/2304.14767">Geva et al., 2023</a>, <a href="https://arxiv.org/abs/2305.00586">Hanna et al., 2023</a>] and explain various puzzles such as double descent [<a href="https://transformer-circuits.pub/2023/toy-double-descent/index.html">Henighan et al., 2023</a>], scaling laws [<a href="https://arxiv.org/abs/2303.13506">Michaud et al., 2023</a>], and grokking [<a href="https://arxiv.org/abs/2301.05217">Nanda et al., 2023</a>,
-          <a href="https://arxiv.org/abs/2302.03025">Chughtai et al., 2023</a>]. At the same time, neuroscientists have found parallels between the neurons
-          recovered from vision models using mechanistic interpretability [<a href="https://distill.pub/2020/circuits">Cammarata et al.,
-          2020</a>] and neurons in mice [<a href="https://www.biorxiv.org/content/10.1101/2023.03.13.531369v1.full">Ding et al., 2023</a>] and primates [<a href="https://www.biorxiv.org/content/10.1101/2023.05.12.540591v1.abstract">Willeke et al., 2023</a>].</p>
-          
-          <p>Despite this progress, significant amounts of mechanistic interpretability work still occur in relative
-          disparate circles – in particular, there seem to be relatively separate threads of work in industry and
-          academia that each use their own (slightly different) notation and terminology.</p>
-          
-          <p>This workshop aims to bring together researchers from both industry and academia to discuss recent
-          progress, address the challenges faced by this field, and clarify future goals, use cases, and agendas.
-          We believe that this workshop can help foster a rich dialogue between researchers with a wide variety
-          of backgrounds and ideas, which in turn will help researchers develop a deeper understanding of how machine learning systems work in practice.
-          </p>
-        <h2>Topics of discussion will include:</h2>
-        <ul>
-            <li>What exactly do we mean when we talk about “features" that neural networks represent?
-            What is the appropriate level of analysis for understanding model internals?</li>
-            <li>Many recent papers have suggested different metrics and techniques for validating mechanistic interpretations [<a href="https://distill.pub/2020/circuits">Cammarata et al., 2020</a>, <a href="https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et al., 2021</a>, <a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">Chan
-            et al., 2022</a>]. What are the advantages and disadvantages of these metrics, and which
-            metrics should the field use going forward? How do we avoid spurious explanations or
-            “interpretability illusions" [<a href="https://arxiv.org/abs/2104.07143">Bolukbasi et al., 2021</a>]?</li>
-            <li>Neural networks seem to represent more features in superposition [<a href="https://transformer-circuits.pub/2022/toy\_model/index.html">Elhage et al., 2022</a>,
-            <a href="https://arxiv.org/abs/2305.01610">Gurnee et al., 2023</a>] than they have dimensions, which poses a significant challenge for
-            identifying what features particular subcomponents are representing. How much of a
-            challenge does superposition pose for various approaches to mechanistic interpretability?
-            What are approaches that allow us to address or circumvent this challenge?</li>
-            <li>Techniques from mechanistic interpretability have been used to identify and edit behavior
-            inside of neural networks [<a href="https://arxiv.org/abs/2202.05262">Meng et al., 2022</a>, <a href="https://www.alignmentforum.org/posts/5spBue2z2tw4JuDCx/steering-gpt-2-xl-by-adding-an-activation-vector">Turner et al., 2023</a>]. However, other recent
-            work has suggested that these edits often have unintended side effects, especially on larger
-            models [<a href="https://arxiv.org/abs/2305.17553">Hoelscher-Obermaier et al., 2023</a>]. How can we refine localization and editing
-            behavior in more specific and scalable methods?</li>
-            <li>There are several related techniques on how to corrupt internal activations inside neural
-            networks to study their internal structure, such as interchange interventions [<a href="https://proceedings.neurips.cc/paper/2021/hash/4f5c422f4d49a5a807eda27434231040-Abstract.html">Geiger et al.,
-            2021</a>], causal tracing [<a href="https://arxiv.org/abs/2202.05262">Meng et al., 2022</a>], path patching [<a href="https://arxiv.org/abs/2211.00593">Wang et al., 2022</a>, <a href="https://arxiv.org/abs/2304.05969">Goldowsky-Dill
-            et al., 2023</a>], and causal scrubbing [<a href="https://www.alignmentforum.org/posts/JvZhhzycHu2Yd57RN/causal-scrubbing-a-method-for-rigorously-testing">Chan et al., 2022</a>]. How are these techniques related,
-            what trade-offs do they make, and what techniques should the field use going forward?</li>
-            <li>Many approaches for generating mechanistic explanations are very labor intensive, leading
-            to interest in automated mechanistic interpretability [<a href="https://arxiv.org/abs/2304.12918">Foote et al., 2023</a>, <a href="https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html">Bills et al., 2023</a>,
-            <a href="https://arxiv.org/abs/2304.14997">Conmy et al., 2023</a>]. How can we develop more scalable, efficient techniques for interpreting
-            ever larger and more complicated models?</li>
-            <li>A significant contributor to the rapid growth of the field is the availability of introductory materials, open-sourced code, and easy-to-use software packages (for example, <a href="https://github.com/neelnanda-io/TransformerLens">Nanda [2022]</a>
-            or <a href="https://arxiv.org/abs/2301.05062">Lindner et al. [2023]</a>), which makes it easier for new researchers to begin to contribute
-            to the field. How can the field continue to foster this beginner-friendly environment going
-            forward?</li>
-            <li>Mechanistic interpretability is sometimes analogized to the neuroscience of machine learning
-            models. How tight is this analogy, and what can the two fields learn from each other?</li>
-        </ul>
-    
-        <p>Besides panel discussions, invited talks, and a poster session, we also plan on running a hands-on
-        tutorial exploring newer results in the field on <a href="https://github.com/neelnanda-io/TransformerLens">Nanda [2022]'s</a> TransformerLens package.</p>
+        However, not all tasks follow these scaling
+laws. Some show Inverse Scaling, i.e., the performance
+drops with increasing model size, or a
+non-monotonic pattern such as U-shaped Scaling
+and Inverse U-shaped Scaling. Cases that defy
+the general trend of positive scaling include several
+of the BIG-Bench (Srivastava et al., 2022)
+benchmark tasks (several with non-monotonic scaling
+and some social bias tasks with inverse scaling,
+the latter also previously reported by Parrish
+et al. (2022)), unwanted memorization (Carlini
+et al., 2023), incorrect Python code generation under
+out-of-distribution (OOD) identifier redefinition
+(Miceli Barone et al., 2023), poor OOD compositional
+generalization of LLMs on a sematic parsing
+task (Kim et al., 2022), truthfulness of LLMs
+on an adversarial question answering dataset (Lin
+et al., 2022), LLM sensitivity to changes to the
+prompting format (Perez et al., 2021), etc. These
+research efforts, among others, culminated in the
+Inverse Scaling Prize (McKenzie et al., 2023) encouraging
+the community to contribute and systematically
+evaluate new tasks for different LLMs
+families. This led to the discovery and characterization
+of several types of tasks with inverse or
+non-monotonic scaling behaviors.
+
+        We believe that studying the scaling behavior
+of LLMs is of paramount importance in order to
+discover the trajectory of progress in NLP and AI.
+Determining whether and to what extent progress
+is due to investment in data and compute instead of
+traditional research (e.g., on different architectures
+and paradigms) can help the scientific community
+identify promising areas of research and inform the
+expectations of general public and decision makers.
+This is especially crucial now, when concerns
+about AI safety and its impact on society are becoming
+increasingly salient in the public discourse.
+We notice that without a central venue dedicated to
+promoting and sharing research on this topic, it has
+been mainly published on arXiv and promoted on
+social media, and much less commonly presented
+at peer-reviewed NLP and ML conferences and
+workshops. Our workshop aims to promote this
+research by providing such venue, establishing a
+place for the community to share their results and
+discuss the state of the art in this quickly developing
+field. While the original Inverse Scaling Prize
+was highly successful, it had limitations stemming
+from the need to be able to run automatic evaluations
+on all the submitted entries hence supporting
+only a handful of entry formats and evaluation
+metrics. As a result, the challenge ignored generation
+tasks, adaptive prompting strategies such as
+Chain-of-Thought (Wei et al., 2023), Least-to-Most
+(Zhou et al., 2023) or Tree-of-Thoughts (Yao et al.,
+2023a), use of external tools (Yao et al., 2023b;
+Schick et al., 2023; Qin et al., 2023), among others.
+Moreover, the prize only considered fixed model
+families and did not allow custom or fine-tuned
+models. Our aim is to elicit paper submissions not
+constrained to a fixed experimental format, allowing
+the authors to choose the task types, model
+families, prompting strategies and evaluation metrics
+that they deem more appropriate. We also
+encourage submissions on studies on internal aspects
+of LLMs in relation with scale, such as attribution
+(Voita et al., 2021; Ferrando et al., 2023),
+mechanistic interpretation (Elhage et al. (2021);
+Wang et al. (2022), to name a few), modularity in
+computation (Csordás et al., 2021; Lepori et al.,
+2023), as well as research on deployment-critical
+metrics other than SoTA accuracy on benchmarks
+(e.g. uncertainty, effectiveness of pruning (Frantar
+and Alistarh, 2023; Sun et al., 2023), distillation,
+quantization (Dettmers et al., 2022; Dettmers and
+Zettlemoyer, 2023), etc.).
+
+        ## Main Workshop Topics
+
+        The workshop will provide focused discussions
+on multiple topics in the general field of Scaling
+behavior of Large Language Models, including, but
+not limited to the following:
+
+1. Novel tasks that exhibit Inverse, U-shaped,
+Inverse U-shaped or other types of scaling;
+2. Scaling behavior of fine-tuned or purposebuilt
+models, in particular in-distribution
+(w.r.t. the fine-tuning dataset) vs. out-ofdistribution;
+3. Scaling with adaptive prompting strategies,
+e.g. allowing intermediate "reasoning" steps,
+model self-critique or use of external tools;
+4. Scaling w.r.t. additional dimensions, such as
+the number of in-context/fine-tuning examples,
+the number of "reasoning" steps, or the
+intrinsic task complexity;
+5. Scaling on non-English language tasks, in particular
+low-resource languages, where models
+might exhibit tradeoffs as high-resource language
+training data overwhelms low-resource
+language capabilities;
+6. Scaling w.r.t. qualitative characteristics: internal
+aspects (e.g. modularity, mechanistic
+interpretability), calibration, uncertainty, effectiveness
+of various techniques (pruning, defences
+against adversarial attacks, etc.).
+
+## Workshop Format
+
+        We accept short and long paper submissions with
+no more than 4 and 8 pages, respectively, and an
+optional 4-page supplementary material. We plan
+to host at least one keynote talk, a few oral presentations
+and poster sessions during one day, as well
+as a panel discussion with 4-5 speakers.
+
+        ## Invited Talk
+
+        Najoung Kim will give a keynote talk. Dr. Kim is an Assistant
+Professor at Boston University and a researcher at
+Google. She is one of the authors of the Inverse
+Scaling Prize paper as well as other foundational
+works in this field.
       </section>
       <section>
         <h2>Invited Speakers</h2>
         <div class="speakers">
           <div class="speaker">
-            <img src="img/chrisolah.jpeg" alt="Speaker" />
+            <img src="https://najoung.kim/assets/img/2022_pic.png" alt="Speaker" />
             <div>
-              <h3><a href="https://colah.github.io/about.html">Chris Olah</a></h3>
-              <p>Anthropic</p>
+              <h3><a href="https://najoung.kim/">Najoung Kim</a></h3>
+              <p>Assistant Professor at Boston University</p>
             </div>
           </div>
-          <div class="speaker">
-            <img src="img/yonathanbelinkov.jpg" alt="Speaker" />
-            <div>
-              <h3><a href="https://belinkov.com/">Yonathan Belinkov</a></h3>
-              <p>Technion IIT</p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img src="img/jacobsteinhardt.png" alt="Speaker" />
-            <div>
-              <h3><a href="https://jsteinhardt.stat.berkeley.edu/">Jacob Steinhardt</a></h3>
-              <p>UC Berkeley</p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img src="img/davidbau.jpeg" alt="Speaker" />
-            <div>
-              <h3><a href="https://www.khoury.northeastern.edu/people/david-bau/">David Bau</a></h3>
-              <p>Northeastern University</p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img src="img/stellabiderman.jpeg" alt="Speaker" />
-            <div>
-              <h3><a href="https://www.stellabiderman.com/">Stella Biderman</a></h3>
-              <p>EleutherAI</p>
-            </div>
-          </div>
-          <div class="speaker">
-            <img src="img/naomisaphra.jpeg" alt="Speaker" />
-            <div>
-              <h3><a href="https://nsaphra.net/">Naomi Saphra</a></h3>
-              <p>NYU</p>
-            </div>
-          </div>
-        </div>
       </section>
-      <section>
-        <h2>Application process</h2>
-        <p>Evaluation of submissions will be based on the originality and novelty, the technical strength, and
-          relevance to the workshop topics. Notifications of acceptance will be sent to applicants by email in
-          September/November 2023.</p>
-      </section>
-      <section>
-        <h2>Submissions</h2>
-        <p>We are inviting submission of 4-page papers outlining new research and technical
-          demonstrations for consideration for presentation during the workshop. We also welcome proposals
-          for technical discussions to be held during the workshop.
-          </p>
-      </section>
-      <section>
-        <h2>Workshop Schedule</h2>
-    <ul>
-        <li>09:00-09:30 - Registration and Introductory Remarks</li>
-        <li>09:30-10:30 - Invited Speakers 1 & 2</li>
-        <li>10:30-10:45 - Coffee Break</li>
-        <li>10:45-11:45 - Invited Speakers 3 & 4</li>
-        <li>11:45-12:45 - Lunch</li>
-        <li>12:45-01:45 - Panel Discussion</li>
-        <li>01:45-02:45 - Hands-on Tutorial 1</li>
-        <li>02:45-03:00 - Coffee Break</li>
-        <li>03:00-04:00 - Invited Speakers 5 & 6</li>
-        <li>04:00-05:00 - Contributed Talks (3 minute/10 minute )</li>
-        <li>05:00-06:00 - Poster Session and Concluding Remarks</li>
-        <li>06:00       - Drinks, Chat and Social</li>
-    </ul>
+      <section class="markdown">
+        ## Schedule
 
+        To be decided
       </section>
       <section>
         <h2>Organizing Committee</h2>
         <div class="organizers">
           <div class="Organizer">
-            <img src="img/fazlbarez.jpeg" alt="Speaker" />
+            <img src="https://homepages.inf.ed.ac.uk/amiceli/pic.jpg" alt="Organizer" />
+            <div>
+              <h3><a href="https://homepages.inf.ed.ac.uk/amiceli/">Antonio Valerio Miceli-Barone</a></h3>
+            </div>
+          </div>
+          <div class="Organizer">
+            <img src="img/fazlbarez.jpeg" alt="Organizer" />
             <div>
               <h3><a href="https://fbarez.github.io/">Fazl Barez</a></h3>
               <p>PhD Student Edinburgh/Oxford University</p>
-            </div>
-          </div>
-          <div class="Organizer">
-            <img src="img/morgeva.jpeg" alt="Organizer" />
-            <div>
-              <h3><a href="https://mega002.github.io/">Mor Geva</a></h3>
-              <p>Post-Doc Google</p>
-            </div>
-          </div>
-          <div class="Organizer">
-            <img src="img/lawrencechan.jpeg" alt="Organizer" />
-            <div>
-              <h3><a href="https://chanlawrence.me/">Lawrence Chan</a></h3>
-              <p>PhD student UC Berkeley / Alignment Research Center</p>
-            </div>
-          </div>
-          <div class="Organizer">
-            <img src="img/kayoyin.jpeg" alt="Organizer" />
-            <div>
-              <h3><a href="https://kayoyin.github.io/">Kayo Yin</a></h3>
-              <p>PhD student UC Berkeley</p>
-            </div>
-          </div>
-          <div class="Organizer">
-            <img src="img/neelnanda.jpeg" alt="Organizer" />
-            <div>
-              <h3><a href="https://www.neelnanda.io/about">Neel Nanda</a></h3>
-              <p>Research Engineer DeepMind</p>
-            </div>
-            </div>
-            <div class="Organizer">
-              <img src="img/maxtegmark.webp" alt="Organizer" />
-              <div>
-                <h3><a href="https://physics.mit.edu/faculty/max-tegmark/">Max Tegmark</a></h3>
-                <p>Professor MIT</p>
-              </div>
             </div>
           </div>
         </div>
@@ -232,7 +220,22 @@
         <h2>Correspondence</h2>
         <p>
           <!-- Emails fazl@apartresearch.com -->
-          Email: <a href="mailto:fazl@robots.ox.ac.uk">fazl@robots.ox.ac.uk</a></p>
+          Email: <a href="mailto:amiceli@ed.ac.uk">amiceli@ed.ac.uk</a></p>
     </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+    // Get all the sections with the class "markdown"
+    let markdownSections = document.querySelectorAll('section.markdown');
+
+    markdownSections.forEach(section => {
+        // Convert markdown content to HTML
+        let convertedHTML = marked(section.textContent);
+        
+        // Replace section content with the converted HTML
+        section.innerHTML = convertedHTML;
+    });
+});
+
+    </script>
   </body>
 </html>
