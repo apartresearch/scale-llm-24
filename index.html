@@ -30,109 +30,17 @@
     <header>
       <h1 class="fade-in">Workshop on the Scaling Behavior of Large Language Models</h1>
       <h1 class="fade-in">SCALE-LLM 2024</h1>
-      <p class="fade-in">Malta, 21-22 March 2024, co-located with <a href="https://2024.eacl.org/">EACL 2024</a></p>
+      <h2 class="fade-in">Malta, 21-22 March 2024, co-located with <a href="https://2024.eacl.org/">EACL 2024</a></h2>
     </header>
     <!-- Content on white background with sections Overview, Schedule, Speakers and Organizing Committee -->
     <main class="fade-in">
       <section class="markdown">
 ## Introduction
 
-Neural Language Models generally seem to adhere
-to positive scaling laws: increasing the model size
-(in terms of the number of parameters, training data
-and training compute) predictably reduces tokenprediction
-training loss, which in turn is a good predictor
-of performance in many downstream tasks
-(Kaplan et al., 2020; Hernandez et al., 2021; Hoffmann
-et al., 2022; Nijkamp et al., 2022). This
-scaling behavior has lead to Large Language Models
-(LLMs) becoming the dominant paradigm in
-Natural Language Processing, prompting speculations
-about all tasks becoming eventually solved
-by sufficiently large models. Sutton (2019) has
-called this the "Bitter Lesson" of AI research: simple
-models at scale tend to outperform attempts to
-implement more complex algorithms that reflect
-mental models of how we solve problems.
+The purpose of this workshop is to provide a venue to share and discuss results of investigations into the scaling behavior of Large Language Models (LLMs). We are particularly interested in results displaying "interesting" scaling curves (e.g., inverse, u-shaped, or inverse u-shaped scaling curves) for a variety of tasks. These results, where the performance of the LLMs decreases with increasing model size or follows a non-monotonic trend, deviating from the expected "the bigger, the better" positive scaling laws, are of great scientific interest as they can reveal intrinsic limitations of current LLM architectures and training paradigms and they provide novel research directions towards a better understanding of these models and of possible approaches to improve them.
 
-However, not all tasks follow these scaling
-laws. Some show Inverse Scaling, i.e., the performance
-drops with increasing model size, or a
-non-monotonic pattern such as U-shaped Scaling
-and Inverse U-shaped Scaling. Cases that defy
-the general trend of positive scaling include several
-of the BIG-Bench (Srivastava et al., 2022)
-benchmark tasks (several with non-monotonic scaling
-and some social bias tasks with inverse scaling,
-the latter also previously reported by Parrish
-et al. (2022)), unwanted memorization (Carlini
-et al., 2023), incorrect Python code generation under
-out-of-distribution (OOD) identifier redefinition
-(Miceli Barone et al., 2023), poor OOD compositional
-generalization of LLMs on a sematic parsing
-task (Kim et al., 2022), truthfulness of LLMs
-on an adversarial question answering dataset (Lin
-et al., 2022), LLM sensitivity to changes to the
-prompting format (Perez et al., 2021), etc. These
-research efforts, among others, culminated in the
-Inverse Scaling Prize (McKenzie et al., 2023) encouraging
-the community to contribute and systematically
-evaluate new tasks for different LLMs
-families. This led to the discovery and characterization
-of several types of tasks with inverse or
-non-monotonic scaling behaviors.
-
-We believe that studying the scaling behavior
-of LLMs is of paramount importance in order to
-discover the trajectory of progress in NLP and AI.
-Determining whether and to what extent progress
-is due to investment in data and compute instead of
-traditional research (e.g., on different architectures
-and paradigms) can help the scientific community
-identify promising areas of research and inform the
-expectations of general public and decision makers.
-This is especially crucial now, when concerns
-about AI safety and its impact on society are becoming
-increasingly salient in the public discourse.
-We notice that without a central venue dedicated to
-promoting and sharing research on this topic, it has
-been mainly published on arXiv and promoted on
-social media, and much less commonly presented
-at peer-reviewed NLP and ML conferences and
-workshops. Our workshop aims to promote this
-research by providing such venue, establishing a
-place for the community to share their results and
-discuss the state of the art in this quickly developing
-field. While the original Inverse Scaling Prize
-was highly successful, it had limitations stemming
-from the need to be able to run automatic evaluations
-on all the submitted entries hence supporting
-only a handful of entry formats and evaluation
-metrics. As a result, the challenge ignored generation
-tasks, adaptive prompting strategies such as
-Chain-of-Thought (Wei et al., 2023), Least-to-Most
-(Zhou et al., 2023) or Tree-of-Thoughts (Yao et al.,
-2023a), use of external tools (Yao et al., 2023b;
-Schick et al., 2023; Qin et al., 2023), among others.
-Moreover, the prize only considered fixed model
-families and did not allow custom or fine-tuned
-models. Our aim is to elicit paper submissions not
-constrained to a fixed experimental format, allowing
-the authors to choose the task types, model
-families, prompting strategies and evaluation metrics
-that they deem more appropriate. We also
-encourage submissions on studies on internal aspects
-of LLMs in relation with scale, such as attribution
-(Voita et al., 2021; Ferrando et al., 2023),
-mechanistic interpretation (Elhage et al. (2021);
-Wang et al. (2022), to name a few), modularity in
-computation (Csordás et al., 2021; Lepori et al.,
-2023), as well as research on deployment-critical
-metrics other than SoTA accuracy on benchmarks
-(e.g. uncertainty, effectiveness of pruning (Frantar
-and Alistarh, 2023; Sun et al., 2023), distillation,
-quantization (Dettmers et al., 2022; Dettmers and
-Zettlemoyer, 2023), etc.).
+Recently, there has been an increasing interest in these phenomena from the research community, culminating in the Inverse Scaling Prize (McKenzie et al. 2023), which solicited tasks to be systematically evaluated according to a standardized protocol in order to perform a systematic study. The SCALE-LLM Workshop will expand these efforts.
+In contrast to the Inverse Scaling Prize, which focused on  zero-shot tasks with a fixed format, we are also interested in, for example, few-shot and alternate prompting strategies (e.g. Chain-of-Thoughts), multi-step interactions (e.g. Tree-of-Thoughts, self-critique), hardening against prompt injection attacks (e.g. user input escaping, canary tokens), etc.
 
 ## Main Workshop Topics
 
@@ -163,6 +71,15 @@ aspects (e.g. modularity, mechanistic
 interpretability), calibration, uncertainty, effectiveness
 of various techniques (pruning, defences
 against adversarial attacks, etc.).
+
+## Important dates
+
+* Workshop paper submission deadline :December 18, 2023
+* Direct Submission deadline (pre-reviewed ARR &amp; main conference): January
+17, 2024
+* Notification of acceptance: January 20, 2024
+* Camera-ready papers due: January 30 2024
+* Workshop dates: March 21 or 22, 2024
 
 ## Workshop Format
 
