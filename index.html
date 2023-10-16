@@ -28,12 +28,11 @@
   <body>
     <!-- Navigation bar -->
     <nav>
-      <ul>
+      <ul class="navbar">
         <li><a href="#introduction">Introduction</a></li>
         <li><a href="#main-workshop-topics">Main Workshop Topics</a></li>
         <li><a href="#important-dates">Important dates</a></li>
         <li><a href="#submission-instructions">Submission instructions</a></li>
-        <li><a href="#invited-talk">Invited Talk</a></li>
         <li><a href="#invited-speakers">Invited Speakers</a></li>
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#organizing-committee">Organizing Committee</a></li>
@@ -49,14 +48,14 @@
     <!-- Content on white background with sections Overview, Schedule, Speakers and Organizing Committee -->
     <main class="fade-in">
       <section class="markdown">
-## Introduction
+## Introduction {#introduction}
 
 The purpose of this workshop is to provide a venue to share and discuss results of investigations into the scaling behavior of Large Language Models (LLMs). We are particularly interested in results displaying "interesting" scaling curves (e.g., inverse, u-shaped, or inverse u-shaped scaling curves) for a variety of tasks. These results, where the performance of the LLMs decreases with increasing model size or follows a non-monotonic trend, deviating from the expected "the bigger, the better" positive scaling laws, are of great scientific interest as they can reveal intrinsic limitations of current LLM architectures and training paradigms and they provide novel research directions towards a better understanding of these models and of possible approaches to improve them.
 
 Recently, there has been an increasing interest in these phenomena from the research community, culminating in the Inverse Scaling Prize ([McKenzie et al. 2023](https://arxiv.org/abs/2306.09479)), which solicited tasks to be systematically evaluated according to a standardized protocol in order to perform a systematic study. The SCALE-LLM Workshop will expand these efforts.
 In contrast to the Inverse Scaling Prize, which focused on  zero-shot tasks with a fixed format, we are also interested in, for example, few-shot and alternate prompting strategies (e.g. Chain-of-Thoughts), multi-step interactions (e.g. Tree-of-Thoughts, self-critique), hardening against prompt injection attacks (e.g. user input escaping, canary tokens), etc.
 
-## Main Workshop Topics
+## Main Workshop Topics {#main-workshop-topics}
 
 The workshop will provide focused discussions
 on multiple topics in the general field of Scaling
@@ -86,7 +85,7 @@ interpretability), calibration, uncertainty, effectiveness
 of various techniques (pruning, defences
 against adversarial attacks, etc.).
 
-## Important dates
+## Important dates {#important-dates}
 
 * Workshop paper submission deadline: December 18, 2023
 * Direct Submission deadline (pre-reviewed ARR &amp; main conference): January
@@ -95,7 +94,7 @@ against adversarial attacks, etc.).
 * Camera-ready papers due: January 30 2024
 * Workshop dates: March 21 or 22, 2024
 
-## Submission instructions
+## Submission instructions {#submission-instructions}
 
 We solicit short and long paper submissions with
 no more than **4 and 8 pages**, respectively, plus unlimited pages for references and appendices.
@@ -109,7 +108,7 @@ All submissions must be anonymous. De-anonymized versions of the submitted paper
 however, we kindly ask the authors not to publicize these papers on social media during while under review.
 Please, send your submissions to our [OpenReview interface](https://openreview.net/group?id=eacl.org/EACL/2024/Workshop/SCALE-LLM).
 
-## Invited Talk
+## Invited Speaker {#invited-speakers}
 
 Najoung Kim will give a keynote talk. Dr. Kim is an Assistant
 Professor at Boston University and a researcher at
@@ -118,7 +117,6 @@ Scaling Prize paper as well as other foundational
 works in this field.
       </section>
       <section>
-        <h2>Invited Speakers</h2>
         <div class="speakers">
           <div class="speaker">
             <img src="https://najoung.kim/assets/img/2022_pic.png" alt="Speaker" />
@@ -129,12 +127,12 @@ works in this field.
           </div>
       </section>
       <section class="markdown">
-## Schedule
+## Schedule {#schedule}
 
 To be decided
       </section>
       <section>
-        <h2>Organizing Committee</h2>
+        <h2 id="organizing-committee">Organizing Committee</h2>
         <div class="organizers">
           <div class="Organizer">
             <img src="https://homepages.inf.ed.ac.uk/amiceli/pic.jpg" alt="Antonio Valerio Miceli-Barone" />
@@ -181,7 +179,7 @@ To be decided
         </div>
       </section>
       <section>
-        <h2>Correspondence</h2>
+        <h2 id="correspondence">Correspondence</h2>
         Email: amiceli AT ed DOT ac DOT uk</p>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.0/marked.min.js" integrity="sha512-4+zFvAejSGVlybiAKYyAz3KMjmbIT7I+wXgx190ZAsT19L2z8S4htBy1scR7CyP9pDKNSaolJMLedCigA/gFVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
