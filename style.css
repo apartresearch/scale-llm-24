@@ -26,7 +26,7 @@ header {
   flex-direction: column;
   color: white;
   /* Make the background into img/bg.jpeg and make it cover */
-  background-image: url("img/bg.png");
+  background-image: url("img/bg_dark.png");
   background-size: cover;
   background-position: top right;
   margin-bottom: 30px;
