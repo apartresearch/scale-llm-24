@@ -83,6 +83,7 @@ h2 {
   /* color: hsl(210, 45%, 48%); */
 }
 
+.sponsors,
 .speakers,
 .organizers {
   display: flex;
@@ -90,6 +91,7 @@ h2 {
   justify-content: left;
 }
 
+.sponsor > img,
 .speaker > img,
 .Organizer > img {
   width: 150px;
@@ -99,6 +101,7 @@ h2 {
   object-fit: cover;
 }
 
+.sponsor,
 .speaker,
 .Organizer {
   display: flex;
@@ -108,11 +111,13 @@ h2 {
   width: 40%;
 }
 
+.sponsor > div > h3,
 .speaker > div > h3,
 .Organizer > div > h3 {
   margin: 0;
 }
 
+.sponsor > div > p,
 .speaker > div > p,
 .Organizer > div > p {
   margin: 0;
@@ -167,10 +172,12 @@ table.schedule td:nth-child(2) {
 
 /* Make width of speakers and organizers full width if screen is smaller than 600px */
 @media (max-width: 900px) {
+  .sponsors,
   .speakers,
   .organizers {
     width: 100%;
   }
+  .sponsor,
   .speaker,
   .Organizer {
     width: 100%;
