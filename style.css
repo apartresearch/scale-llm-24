@@ -56,7 +56,7 @@ header > p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 12px;
+  /* font-size: 12px; */
 }
 
 .navbar li a:hover {
