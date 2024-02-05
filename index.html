@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>SCALE-LLM 2024 Workshop on the Scaling Behavior of Large Language Models</title>
+    <title>
+      SCALE-LLM 2024 Workshop on the Scaling Behavior of Large Language Models
+    </title>
 
     <!-- Setup all meta-information like description and titles -->
     <meta
@@ -33,159 +35,178 @@
         <li><a href="#main-workshop-topics">Workshop Topics</a></li>
         <li><a href="#important-dates">Important dates</a></li>
         <li><a href="#submission-instructions">Submissions</a></li>
-	<li><a href="#student-scholarship">Student scholarship</a></li>
+        <li><a href="#student-scholarship">Student scholarship</a></li>
         <li><a href="#invited-speakers">Invited Speakers</a></li>
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#organizing-committee">Organizers</a></li>
-	<li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#correspondence">Contacts</a></li>
       </ul>
     </nav>
     <!-- Header with a background color filling approx. 300px and that has a title of the workshop and the date as a byline -->
     <header>
-      <h1 class="fade-in">Workshop on the Scaling Behavior of Large Language Models</h1>
+      <h1 class="fade-in">
+        Workshop on the Scaling Behavior of Large Language Models
+      </h1>
       <h1 class="fade-in">SCALE-LLM 2024</h1>
-      <h2 class="fade-in">Malta, 21-22 March 2024, co-located with <a href="https://2024.eacl.org/" style="color: #FFA500;">EACL 2024</a></h2>
+      <h2 class="fade-in">
+        Malta, 21-22 March 2024, co-located with
+        <a href="https://2024.eacl.org/" style="color: #ffa500">EACL 2024</a>
+      </h2>
     </header>
     <!-- Content on white background with sections Overview, Schedule, Speakers and Organizing Committee -->
     <main class="fade-in">
-
       <section><h2 id="introduction">Introduction</h2></section>
       <section class="markdown">
-
-The purpose of this workshop is to provide a venue to share and discuss results of investigations into the scaling behavior of Large Language Models (LLMs). We are particularly interested in results displaying "interesting" scaling curves (e.g., inverse, u-shaped, or inverse u-shaped scaling curves) for a variety of tasks. These results, where the performance of the LLMs decreases with increasing model size or follows a non-monotonic trend, deviating from the expected "the bigger, the better" positive scaling laws, are of great scientific interest as they can reveal intrinsic limitations of current LLM architectures and training paradigms and they provide novel research directions towards a better understanding of these models and of possible approaches to improve them.
-
-Recently, there has been an increasing interest in these phenomena from the research community, culminating in the Inverse Scaling Prize ([McKenzie et al. 2023](pdf/inverse_scaling_prize_paper.pdf)), which solicited tasks to be systematically evaluated according to a standardized protocol in order to perform a systematic study. The SCALE-LLM Workshop will expand these efforts.
-In contrast to the Inverse Scaling Prize, which focused on  zero-shot tasks with a fixed format, we are also interested in, for example, few-shot and alternate prompting strategies (e.g. Chain-of-Thoughts), multi-step interactions (e.g. Tree-of-Thoughts, self-critique), hardening against prompt injection attacks (e.g. user input escaping, canary tokens), etc.
-
-</section>
+        The purpose of this workshop is to provide a venue to share and discuss
+        results of investigations into the scaling behavior of Large Language
+        Models (LLMs). We are particularly interested in results displaying
+        "interesting" scaling curves (e.g., inverse, u-shaped, or inverse
+        u-shaped scaling curves) for a variety of tasks. These results, where
+        the performance of the LLMs decreases with increasing model size or
+        follows a non-monotonic trend, deviating from the expected "the bigger,
+        the better" positive scaling laws, are of great scientific interest as
+        they can reveal intrinsic limitations of current LLM architectures and
+        training paradigms and they provide novel research directions towards a
+        better understanding of these models and of possible approaches to
+        improve them. Recently, there has been an increasing interest in these
+        phenomena from the research community, culminating in the Inverse
+        Scaling Prize ([McKenzie et al.
+        2023](pdf/inverse_scaling_prize_paper.pdf)), which solicited tasks to be
+        systematically evaluated according to a standardized protocol in order
+        to perform a systematic study. The SCALE-LLM Workshop will expand these
+        efforts. In contrast to the Inverse Scaling Prize, which focused on
+        zero-shot tasks with a fixed format, we are also interested in, for
+        example, few-shot and alternate prompting strategies (e.g.
+        Chain-of-Thoughts), multi-step interactions (e.g. Tree-of-Thoughts,
+        self-critique), hardening against prompt injection attacks (e.g. user
+        input escaping, canary tokens), etc.
+      </section>
       <section><h2 id="main-workshop-topics">Main Workshop Topics</h2></section>
       <section class="markdown">
+        The workshop will provide focused discussions on multiple topics in the
+        general field of Scaling behavior of Large Language Models, including,
+        but not limited to the following: 1. Novel tasks that exhibit Inverse,
+        U-shaped, Inverse U-shaped or other types of scaling; 2. Scaling
+        behavior of fine-tuned or purpose-built models, in particular
+        in-distribution (w.r.t. the fine-tuning dataset) vs.
+        out-of-distribution; 3. Scaling with adaptive prompting strategies, e.g.
+        allowing intermediate "reasoning" steps, model self-critique or use of
+        external tools; 4. Scaling w.r.t. additional dimensions, such as the
+        number of in-context/fine-tuning examples, the number of "reasoning"
+        steps, or the intrinsic task complexity; 5. Scaling on non-English
+        language tasks, in particular low-resource languages, where models might
+        exhibit tradeoffs as high-resource language training data overwhelms
+        low-resource language capabilities; 6. Scaling w.r.t. qualitative
+        characteristics: internal aspects (e.g. modularity, mechanistic
+        interpretability), calibration, uncertainty, effectiveness of various
+        techniques (pruning, defences against adversarial attacks, etc.).
+      </section>
+      <section><h2 id="important-dates">Important dates</h2></section>
+      <section class="markdown">
+        * **Workshop paper submission deadline: ~~December 18, 2023~~ December
+        25, 2023 (extended)** * EACL rejected paper submission deadline (ARR
+        pre-reviewed): January 17, 2024 * Notification of acceptance: January
+        27, 2024 * Camera-ready papers due: February 6, 2024 * Workshop dates:
+        March 21 or 22, 2024
+      </section>
+      <section>
+        <h2 id="submission-instructions">Submission instructions</h2>
+      </section>
+      <section class="markdown">
+        We solicit short and long paper submissions with no more than **4 and 8
+        pages**, respectively, plus unlimited pages for references and
+        appendices. We welcome novel research, system descriptions and position
+        papers. Papers must contain "**Limitations**" and "**Ethics Statement**"
+        sections which will not count towards the page limit. Upon acceptance,
+        **one additional page** will be provided to address the reviewers'
+        comments. Paper submissions must use the official [ACL style
+        templates](https://github.com/acl-org/acl-style-files) and must follow
+        the [ACL formatting
+        guidelines](https://acl-org.github.io/ACLPUB/formatting.html). All
+        submissions must be anonymous. De-anonymized versions of the submitted
+        papers **may** be released on pre-print servers such as arXiv, however,
+        we kindly ask the authors not discuss these papers on social media
+        during the review period. Please, **send your submissions** to our
+        [OpenReview
+        interface](https://openreview.net/group?id=eacl.org/EACL/2024/Workshop/SCALE-LLM).
+        We can also consider papers submitted via **ACL Rolling Reviews (ARR)**
+        to EACL and rejected. A paper may not be simultaneously under review
+        through ARR and SCALE-LLM. A paper that has or will receive reviews
+        through ARR may not be submitted for review to SCALE-LLM. Keep in mind
+        that ARR has stricter anonymity requirements regarding pre-print servers
+        and social media, so make sure you do not de-anonymize papers submitted
+        through ARR by posting them on arXiv or social media. Please refer to
+        the [ARR instructions for autors](https://aclrollingreview.org/authors)
+        for more information. Accepted papers will be published in the
+        Proceedings of the First Workshop on the Scaling Behavior of Large
+        Language Models, however you can request us not to publish your paper if
+        you prefer so (e.g. if the paper has already been submitted to or
+        published in another venue).
+      </section>
 
-The workshop will provide focused discussions
-on multiple topics in the general field of Scaling
-behavior of Large Language Models, including, but
-not limited to the following:
-
-1. Novel tasks that exhibit Inverse, U-shaped,
-Inverse U-shaped or other types of scaling;
-2. Scaling behavior of fine-tuned or purpose-built
-models, in particular in-distribution
-(w.r.t. the fine-tuning dataset) vs. out-of-distribution;
-3. Scaling with adaptive prompting strategies,
-e.g. allowing intermediate "reasoning" steps,
-model self-critique or use of external tools;
-4. Scaling w.r.t. additional dimensions, such as
-the number of in-context/fine-tuning examples,
-the number of "reasoning" steps, or the
-intrinsic task complexity;
-5. Scaling on non-English language tasks, in particular
-low-resource languages, where models
-might exhibit tradeoffs as high-resource language
-training data overwhelms low-resource
-language capabilities;
-6. Scaling w.r.t. qualitative characteristics: internal
-aspects (e.g. modularity, mechanistic
-interpretability), calibration, uncertainty, effectiveness
-of various techniques (pruning, defences
-against adversarial attacks, etc.).
-
-</section>
-        <section><h2 id="important-dates">Important dates</h2></section>
-        <section class="markdown">
-
-* **Workshop paper submission deadline: ~~December 18, 2023~~ December 25, 2023 (extended)**
-* EACL rejected paper submission deadline (ARR pre-reviewed): January
-17, 2024
-* Notification of acceptance: January 27, 2024
-* Camera-ready papers due: February 6, 2024
-* Workshop dates: March 21 or 22, 2024
-
-</section>
-          <section><h2 id="submission-instructions">Submission instructions</h2></section>
-          <section class="markdown">
-
-We solicit short and long paper submissions with
-no more than **4 and 8 pages**, respectively, plus unlimited pages for references and appendices.
-We welcome novel research, system descriptions and position papers.
-		  
-Papers must contain "**Limitations**" and "**Ethics Statement**" sections which will not count towards the page limit.
-Upon acceptance, **one additional page** will be provided to address the reviewers' comments.
-Paper submissions must use the official [ACL style templates](https://github.com/acl-org/acl-style-files) 
-and must follow the [ACL formatting guidelines](https://acl-org.github.io/ACLPUB/formatting.html). 
-
-All submissions must be anonymous. De-anonymized versions of the submitted papers **may** be released on pre-print servers such as arXiv, 
-however, we kindly ask the authors not discuss these papers on social media during the review period.
-            
-Please, **send your submissions** to our [OpenReview interface](https://openreview.net/group?id=eacl.org/EACL/2024/Workshop/SCALE-LLM).
-
-We can also consider papers submitted via **ACL Rolling Reviews (ARR)** to EACL and rejected. 
-A paper may not be simultaneously under review through ARR and SCALE-LLM. A paper that has or will receive reviews through ARR 
-may not be submitted for review to SCALE-LLM.
-Keep in mind that ARR has stricter anonymity requirements regarding pre-print servers and social media, 
-so make sure you do not de-anonymize papers submitted through ARR by posting them on arXiv or social media. 
-Please refer to the [ARR instructions for autors](https://aclrollingreview.org/authors) for more information.
-
-Accepted papers will be published in the Proceedings of the First Workshop on the Scaling Behavior of Large Language Models, 
-however you can request us not to publish your paper if you prefer so (e.g. if the paper has already been submitted to or published 
-in another venue).
-
-</section>
-
-          <section><h2 id="student-scholarship">Student scholarship</h2></section>
-          <section class="markdown">
-
-Thanks to our Platinum sponsor Google, we can offer financial support to a limited number of students from low-income countries or 
-other disadvantaged financial situation who would like to participate to the SCALE-LLM workshop.
-We may able to cover the EACL virtual conference registration fee.
-We will prioritize students who are authors of one of the accepted papers.
-If you are interested in receiving financial support, please [contact us](correspondence) before January 30 2024, explaning your situation.
-
-</section>
-            <section><h2 id="invited-speakers">Invited Speakers</h2></section>
-            <section class="markdown">
-
-Ian McKenzie and Najoung Kim will each give a keynote talk.
-
-Ian McKenzie is the main organizer of the Inverse Scaling Prize and first author of the associated paper, 
-currently he is a contracting Research Engineer on OpenAI's Dangerous Capability Evaluations project.
-	    
-Dr. Kim is an Assistant Professor at Boston University and a researcher at
-Google. She is also one of the authors of the Inverse Scaling Prize paper as well as other foundational
-works in this field.
+      <section><h2 id="student-scholarship">Student scholarship</h2></section>
+      <section class="markdown">
+        Thanks to our Platinum sponsor Google, we can offer financial support to
+        a limited number of students from low-income countries or other
+        disadvantaged financial situation who would like to participate to the
+        SCALE-LLM workshop. We may able to cover the EACL virtual conference
+        registration fee. We will prioritize students who are authors of one of
+        the accepted papers. If you are interested in receiving financial
+        support, please [contact us](correspondence) before January 30 2024,
+        explaning your situation.
+      </section>
+      <section><h2 id="invited-speakers">Invited Speakers</h2></section>
+      <section class="markdown">
+        Ian McKenzie and Najoung Kim will each give a keynote talk. Ian McKenzie
+        is the main organizer of the Inverse Scaling Prize and first author of
+        the associated paper, currently he is a contracting Research Engineer on
+        OpenAI's Dangerous Capability Evaluations project. Dr. Kim is an
+        Assistant Professor at Boston University and a researcher at Google. She
+        is also one of the authors of the Inverse Scaling Prize paper as well as
+        other foundational works in this field.
       </section>
       <section>
         <div class="speakers">
           <div class="speaker">
-            <img src="https://najoung.kim/assets/img/2022_pic.png" alt="Najoung Kim" />
+            <img
+              src="https://najoung.kim/assets/img/2022_pic.png"
+              alt="Najoung Kim"
+            />
             <div>
               <h3><a href="https://najoung.kim/">Najoung Kim</a></h3>
               <p>Assistant Professor at Boston University</p>
             </div>
           </div>
           <div class="speaker">
-            <img src="https://far.ai/author/ian-mckenzie/avatar_hua2a26105c18ff52aacb07efd529d5ba7_26729_270x270_fill_q75_lanczos_center.jpg" alt="Ian McKenzie" />
+            <img
+              src="https://far.ai/author/ian-mckenzie/avatar_hua2a26105c18ff52aacb07efd529d5ba7_26729_270x270_fill_q75_lanczos_center.jpg"
+              alt="Ian McKenzie"
+            />
             <div>
               <h3><a href="https://irmckenzie.co.uk/">Ian McKenzie</a></h3>
               <p>Contracting Research Engineer at OpenAI</p>
             </div>
           </div>
-	</div>
+        </div>
       </section>
-      <section class="markdown">
-</section>
-              <section><h2 id="schedule">Schedule</h2></section>
-              <section class="markdown">
-
-To be decided
-      </section>
+      <section class="markdown"></section>
+      <section><h2 id="schedule">Schedule</h2></section>
+      <section class="markdown">To be decided</section>
       <section>
         <h2 id="organizing-committee">Organizing Committee</h2>
         <div class="organizers">
           <div class="Organizer">
-            <img src="https://homepages.inf.ed.ac.uk/amiceli/pic.jpg" alt="Antonio Valerio Miceli-Barone" />
+            <img
+              src="https://homepages.inf.ed.ac.uk/amiceli/pic.jpg"
+              alt="Antonio Valerio Miceli-Barone"
+            />
             <div>
-              <h3><a href="https://homepages.inf.ed.ac.uk/amiceli/">Antonio Valerio Miceli-Barone</a></h3>
+              <h3>
+                <a href="https://homepages.inf.ed.ac.uk/amiceli/"
+                  >Antonio Valerio Miceli-Barone</a
+                >
+              </h3>
               <p>Research Associate, University of Edinburgh</p>
             </div>
           </div>
@@ -199,281 +220,322 @@ To be decided
           <div class="Organizer">
             <img src="img/Shay-newpic.png" alt="Shay Cohen" />
             <div>
-              <h3><a href="https://homepages.inf.ed.ac.uk/scohen/">Shay Cohen</a></h3>
+              <h3>
+                <a href="https://homepages.inf.ed.ac.uk/scohen/">Shay Cohen</a>
+              </h3>
               <p>Reader, University of Edinburgh</p>
             </div>
           </div>
           <div class="Organizer">
-            <img src="https://lena-voita.github.io/img/people/lena_blue.jpeg" alt="Elena Voita" />
+            <img
+              src="https://lena-voita.github.io/img/people/lena_blue.jpeg"
+              alt="Elena Voita"
+            />
             <div>
               <h3><a href="https://lena-voita.github.io/">Elena Voita</a></h3>
               <p>Research Scientist, Meta</p>
             </div>
           </div>
           <div class="Organizer">
-            <img src="https://www.research.ed.ac.uk/files-asset/25535596/germann1.jpg" alt="Ulrich Germann" />
+            <img
+              src="https://www.research.ed.ac.uk/files-asset/25535596/germann1.jpg"
+              alt="Ulrich Germann"
+            />
             <div>
-              <h3><a href="https://www.research.ed.ac.uk/en/persons/ulrich-germann">Ulrich Germann</a></h3>
+              <h3>
+                <a
+                  href="https://www.research.ed.ac.uk/en/persons/ulrich-germann"
+                  >Ulrich Germann</a
+                >
+              </h3>
               <p>Senior Computing Officer (Research)</p>
             </div>
           </div>
           <div class="Organizer">
-            <img src="https://mlukasik.github.io/img/nav/i.jpg" alt="Michal Lukasik" />
+            <img
+              src="https://mlukasik.github.io/img/nav/i.jpg"
+              alt="Michal Lukasik"
+            />
             <div>
-              <h3><a href="https://mlukasik.github.io/index.html">Michal Lukasik</a></h3>
+              <h3>
+                <a href="https://mlukasik.github.io/index.html"
+                  >Michal Lukasik</a
+                >
+              </h3>
               <p>Researcher, Google Research</p>
             </div>
           </div>
         </div>
       </section>
       <section>
-	<h2 id="sponsors">Sponsors</h2>
-	<div class="sponsors">
+        <h2 id="sponsors">Sponsors</h2>
+        <div class="sponsors">
           <div class="Sponsor">
-            <img src="img/Google_logo.svg" style="width:500px;" alt="Google" />
+            <img src="img/Google_logo.svg" style="width: 500px" alt="Google" />
             <div>
               <h3><a href="https://research.google/">Google Research</a></h3>
-              <p>Platinum sponsor: supports our best paper awards and student scholarship</p>
+              <p>
+                Platinum sponsor: supports our best paper awards and student
+                scholarship
+              </p>
             </div>
           </div>
           <div class="Sponsor">
-            <img src="img/Meta_logo.svg" style="width:250px;" alt="Meta" />
+            <img src="img/Meta_logo.svg" style="width: 250px" alt="Meta" />
             <div>
               <h3><a href="https://research.facebook.com/">Meta</a></h3>
               <p>Silver sponsor</p>
             </div>
           </div>
-	  <div class="Sponsor">
-            <img src="img/TAS_UKRI_logo.png" style="height:64px;" alt="TAS" />
+          <div class="Sponsor organizers-sponsor">
+            <img src="img/TAS_UKRI_logo.png" style="height: 64px" alt="TAS" />
             <div>
-              <h3><a href="https://tas.ac.uk/home/the-nodes/">The UKRI Trustworthy<br /> 
-		Autonomous Systems Hub</a></h3>
+              <h3>
+                <a href="https://tas.ac.uk/home/the-nodes/"
+                  >The UKRI Trustworthy<br />
+                  Autonomous Systems Hub</a
+                >
+              </h3>
               <p>Organizers' sponsor</p>
             </div>
           </div>
-	  <div class="Sponsor">
-            <img src="img/apart_logo_text_icon.png" style="height:64px;" alt="TAS" />
+          <div class="Sponsor organizers-sponsor">
+            <img
+              src="img/apart_logo_text_icon.png"
+              style="height: 64px"
+              alt="TAS"
+            />
             <div>
               <h3><a href="https://apartresearch.com/">Apart Research</a></h3>
               <p>Organizers' sponsor</p>
             </div>
           </div>
-	</div>
+        </div>
       </section>
       <section>
         <h2 id="correspondence">Correspondence</h2>
-	<p>Email: <a href="mailto:amiceli@ed.ac.uk">amiceli@ed.ac.uk</a></p>
+        <p>Email: <a href="mailto:amiceli@ed.ac.uk">amiceli@ed.ac.uk</a></p>
       </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.0/marked.min.js" integrity="sha512-4+zFvAejSGVlybiAKYyAz3KMjmbIT7I+wXgx190ZAsT19L2z8S4htBy1scR7CyP9pDKNSaolJMLedCigA/gFVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <script>
-     /**
- * drawdown.js
- * (c) Adam Leggett
- */
-
-function markdown(src) {
-  var rx_lt = /</g;
-  var rx_gt = />/g;
-  var rx_space = /\t|\r|\uf8ff/g;
-  var rx_escape = /\\([\\\|`*_{}\[\]()#+\-~])/g;
-  var rx_hr = /^([*\-=_] *){3,}$/gm;
-  var rx_blockquote = /\n *&gt; *([^]*?)(?=(\n|$){2})/g;
-  var rx_list =
-    /\n( *)(?:[*\-+]|((\d+)|([a-z])|[A-Z])[.)]) +([^]*?)(?=(\n|$){2})/g;
-  var rx_listjoin = /<\/(ol|ul)>\n\n<\1>/g;
-  var rx_highlight =
-    /(^|[^A-Za-z\d\\])(([*_])|(~)|(\^)|(--)|(\+\+)|`)(\2?)([^<]*?)\2\8(?!\2)(?=\W|_|$)/g;
-  var rx_code = /\n((```|~~~).*\n?([^]*?)\n?\2|((    .*?\n)+))/g;
-  var rx_link = /((!?)\[(.*?)\]\((.*?)( ".*")?\)|\\([\\`*_{}\[\]()#+\-.!~]))/g;
-  var rx_table = /\n(( *\|.*?\| *\n)+)/g;
-  var rx_thead = /^.*\n( *\|( *\:?-+\:?-+\:? *\|)* *\n|)/;
-  var rx_row = /.*\n/g;
-  var rx_cell = /\||(.*?[^\\])\|/g;
-  var rx_heading = /(?=^|>|\n)([>\s]*?)(#{1,6}) (.*?)( #*)? *(?=\n|$)/g;
-  var rx_para = /(?=^|>|\n)\s*\n+([^<]+?)\n+\s*(?=\n|<|$)/g;
-  var rx_stash = /-\d+\uf8ff/g;
-
-  function replace(rex, fn) {
-    src = src.replace(rex, fn);
-  }
-
-  function element(tag, content) {
-    return "<" + tag + ">" + content + "</" + tag + ">";
-  }
-
-  function blockquote(src) {
-    return src.replace(rx_blockquote, function (all, content) {
-      return element(
-        "blockquote",
-        blockquote(highlight(content.replace(/^ *&gt; */gm, "")))
-      );
-    });
-  }
-
-  function list(src) {
-    return src.replace(rx_list, function (all, ind, ol, num, low, content) {
-      var entry = element(
-        "li",
-        highlight(
-          content
-            .split(
-              RegExp("\n ?" + ind + "(?:(?:\\d+|[a-zA-Z])[.)]|[*\\-+]) +", "g")
-            )
-            .map(list)
-            .join("</li><li>")
-        )
-      );
-
-      return (
-        "\n" +
-        (ol
-          ? '<ol start="' +
-            (num
-              ? ol + '">'
-              : parseInt(ol, 36) -
-                9 +
-                '" style="list-style-type:' +
-                (low ? "low" : "upp") +
-                'er-alpha">') +
-            entry +
-            "</ol>"
-          : element("ul", entry))
-      );
-    });
-  }
-
-  function highlight(src) {
-    return src.replace(
-      rx_highlight,
-      function (all, _, p1, emp, sub, sup, small, big, p2, content) {
-        return (
-          _ +
-          element(
-            emp
-              ? p2
-                ? "strong"
-                : "em"
-              : sub
-              ? p2
-                ? "s"
-                : "sub"
-              : sup
-              ? "sup"
-              : small
-              ? "small"
-              : big
-              ? "big"
-              : "code",
-            highlight(content)
-          )
-        );
-      }
-    );
-  }
-
-  function unesc(str) {
-    return str.replace(rx_escape, "$1");
-  }
-
-  var stash = [];
-  var si = 0;
-
-  src = "\n" + src + "\n";
-
-  replace(rx_lt, "&lt;");
-  replace(rx_gt, "&gt;");
-  replace(rx_space, "  ");
-
-  // blockquote
-  src = blockquote(src);
-
-  // horizontal rule
-  replace(rx_hr, "<hr/>");
-
-  // list
-  src = list(src);
-  replace(rx_listjoin, "");
-
-  // code
-  replace(rx_code, function (all, p1, p2, p3, p4) {
-    stash[--si] = element(
-      "pre",
-      element("code", p3 || p4.replace(/^    /gm, ""))
-    );
-    return si + "\uf8ff";
-  });
-
-  // link or image
-  replace(rx_link, function (all, p1, p2, p3, p4, p5, p6) {
-    stash[--si] = p4
-      ? p2
-        ? '<img src="' + p4 + '" alt="' + p3 + '"/>'
-        : '<a href="' + p4 + '">' + unesc(highlight(p3)) + "</a>"
-      : p6;
-    return si + "\uf8ff";
-  });
-
-  // table
-  replace(rx_table, function (all, table) {
-    var sep = table.match(rx_thead)[1];
-    return (
-      "\n" +
-      element(
-        "table",
-        table.replace(rx_row, function (row, ri) {
-          return row == sep
-            ? ""
-            : element(
-                "tr",
-                row.replace(rx_cell, function (all, cell, ci) {
-                  return ci
-                    ? element(
-                        sep && !ri ? "th" : "td",
-                        unesc(highlight(cell || ""))
-                      )
-                    : "";
-                })
-              );
-        })
-      )
-    );
-  });
-
-  // heading
-  replace(rx_heading, function (all, _, p1, p2) {
-    return _ + element("h" + p1.length, unesc(highlight(p2)));
-  });
-
-  // paragraph
-  replace(rx_para, function (all, content) {
-    return element("p", unesc(highlight(content)));
-  });
-
-  // stash
-  replace(rx_stash, function (all) {
-    return stash[parseInt(all)];
-  });
-
-  return src.trim();
-}
-
-   </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.0/marked.min.js"
+      integrity="sha512-4+zFvAejSGVlybiAKYyAz3KMjmbIT7I+wXgx190ZAsT19L2z8S4htBy1scR7CyP9pDKNSaolJMLedCigA/gFVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-    // Get all the sections with the class "markdown"
-    let markdownSections = document.querySelectorAll('section.markdown');
+      /**
+       * drawdown.js
+       * (c) Adam Leggett
+       */
 
-    markdownSections.forEach(section => {
-        // Convert markdown content to HTML
-        let convertedHTML = markdown(section.textContent);
-        
-        // Replace section content with the converted HTML
-        section.innerHTML = convertedHTML;
-      console.log("Changed");
-    });
-});
+      function markdown(src) {
+        var rx_lt = /</g;
+        var rx_gt = />/g;
+        var rx_space = /\t|\r|\uf8ff/g;
+        var rx_escape = /\\([\\\|`*_{}\[\]()#+\-~])/g;
+        var rx_hr = /^([*\-=_] *){3,}$/gm;
+        var rx_blockquote = /\n *&gt; *([^]*?)(?=(\n|$){2})/g;
+        var rx_list =
+          /\n( *)(?:[*\-+]|((\d+)|([a-z])|[A-Z])[.)]) +([^]*?)(?=(\n|$){2})/g;
+        var rx_listjoin = /<\/(ol|ul)>\n\n<\1>/g;
+        var rx_highlight =
+          /(^|[^A-Za-z\d\\])(([*_])|(~)|(\^)|(--)|(\+\+)|`)(\2?)([^<]*?)\2\8(?!\2)(?=\W|_|$)/g;
+        var rx_code = /\n((```|~~~).*\n?([^]*?)\n?\2|((    .*?\n)+))/g;
+        var rx_link =
+          /((!?)\[(.*?)\]\((.*?)( ".*")?\)|\\([\\`*_{}\[\]()#+\-.!~]))/g;
+        var rx_table = /\n(( *\|.*?\| *\n)+)/g;
+        var rx_thead = /^.*\n( *\|( *\:?-+\:?-+\:? *\|)* *\n|)/;
+        var rx_row = /.*\n/g;
+        var rx_cell = /\||(.*?[^\\])\|/g;
+        var rx_heading = /(?=^|>|\n)([>\s]*?)(#{1,6}) (.*?)( #*)? *(?=\n|$)/g;
+        var rx_para = /(?=^|>|\n)\s*\n+([^<]+?)\n+\s*(?=\n|<|$)/g;
+        var rx_stash = /-\d+\uf8ff/g;
 
+        function replace(rex, fn) {
+          src = src.replace(rex, fn);
+        }
+
+        function element(tag, content) {
+          return "<" + tag + ">" + content + "</" + tag + ">";
+        }
+
+        function blockquote(src) {
+          return src.replace(rx_blockquote, function (all, content) {
+            return element(
+              "blockquote",
+              blockquote(highlight(content.replace(/^ *&gt; */gm, "")))
+            );
+          });
+        }
+
+        function list(src) {
+          return src.replace(
+            rx_list,
+            function (all, ind, ol, num, low, content) {
+              var entry = element(
+                "li",
+                highlight(
+                  content
+                    .split(
+                      RegExp(
+                        "\n ?" + ind + "(?:(?:\\d+|[a-zA-Z])[.)]|[*\\-+]) +",
+                        "g"
+                      )
+                    )
+                    .map(list)
+                    .join("</li><li>")
+                )
+              );
+
+              return (
+                "\n" +
+                (ol
+                  ? '<ol start="' +
+                    (num
+                      ? ol + '">'
+                      : parseInt(ol, 36) -
+                        9 +
+                        '" style="list-style-type:' +
+                        (low ? "low" : "upp") +
+                        'er-alpha">') +
+                    entry +
+                    "</ol>"
+                  : element("ul", entry))
+              );
+            }
+          );
+        }
+
+        function highlight(src) {
+          return src.replace(
+            rx_highlight,
+            function (all, _, p1, emp, sub, sup, small, big, p2, content) {
+              return (
+                _ +
+                element(
+                  emp
+                    ? p2
+                      ? "strong"
+                      : "em"
+                    : sub
+                    ? p2
+                      ? "s"
+                      : "sub"
+                    : sup
+                    ? "sup"
+                    : small
+                    ? "small"
+                    : big
+                    ? "big"
+                    : "code",
+                  highlight(content)
+                )
+              );
+            }
+          );
+        }
+
+        function unesc(str) {
+          return str.replace(rx_escape, "$1");
+        }
+
+        var stash = [];
+        var si = 0;
+
+        src = "\n" + src + "\n";
+
+        replace(rx_lt, "&lt;");
+        replace(rx_gt, "&gt;");
+        replace(rx_space, "  ");
+
+        // blockquote
+        src = blockquote(src);
+
+        // horizontal rule
+        replace(rx_hr, "<hr/>");
+
+        // list
+        src = list(src);
+        replace(rx_listjoin, "");
+
+        // code
+        replace(rx_code, function (all, p1, p2, p3, p4) {
+          stash[--si] = element(
+            "pre",
+            element("code", p3 || p4.replace(/^    /gm, ""))
+          );
+          return si + "\uf8ff";
+        });
+
+        // link or image
+        replace(rx_link, function (all, p1, p2, p3, p4, p5, p6) {
+          stash[--si] = p4
+            ? p2
+              ? '<img src="' + p4 + '" alt="' + p3 + '"/>'
+              : '<a href="' + p4 + '">' + unesc(highlight(p3)) + "</a>"
+            : p6;
+          return si + "\uf8ff";
+        });
+
+        // table
+        replace(rx_table, function (all, table) {
+          var sep = table.match(rx_thead)[1];
+          return (
+            "\n" +
+            element(
+              "table",
+              table.replace(rx_row, function (row, ri) {
+                return row == sep
+                  ? ""
+                  : element(
+                      "tr",
+                      row.replace(rx_cell, function (all, cell, ci) {
+                        return ci
+                          ? element(
+                              sep && !ri ? "th" : "td",
+                              unesc(highlight(cell || ""))
+                            )
+                          : "";
+                      })
+                    );
+              })
+            )
+          );
+        });
+
+        // heading
+        replace(rx_heading, function (all, _, p1, p2) {
+          return _ + element("h" + p1.length, unesc(highlight(p2)));
+        });
+
+        // paragraph
+        replace(rx_para, function (all, content) {
+          return element("p", unesc(highlight(content)));
+        });
+
+        // stash
+        replace(rx_stash, function (all) {
+          return stash[parseInt(all)];
+        });
+
+        return src.trim();
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all the sections with the class "markdown"
+        let markdownSections = document.querySelectorAll("section.markdown");
+
+        markdownSections.forEach((section) => {
+          // Convert markdown content to HTML
+          let convertedHTML = markdown(section.textContent);
+
+          // Replace section content with the converted HTML
+          section.innerHTML = convertedHTML;
+          console.log("Changed");
+        });
+      });
     </script>
   </body>
 </html>
