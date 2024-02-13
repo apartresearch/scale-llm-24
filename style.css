@@ -102,7 +102,7 @@ h2 {
   object-fit: cover;
 }
 
-.Sponsor,
+.sponsor,
 .speaker,
 .Organizer {
   display: flex;
@@ -112,26 +112,7 @@ h2 {
   width: 40%;
 }
 
-.Sponsor {
-  width: 100%;
-
-  display: flex;
-  align-items: start;
-  margin-bottom: 20px;
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-.Sponsor.organizers-sponsor {
-  width: 40%;
-  min-width: 200px;
-}
-
-.Sponsor > div > p {
-  margin: 0;
-}
-
-.Sponsor > div > h3,
+.sponsor > div > h3,
 .speaker > div > h3,
 .Organizer > div > h3 {
   margin: 0;
