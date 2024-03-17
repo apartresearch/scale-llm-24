@@ -147,19 +147,22 @@ If you are interested in receiving financial support, please [contact us](corres
 
 Ian McKenzie and Najoung Kim will each give a keynote talk.
 
-Ian McKenzie is the main organizer of the Inverse Scaling Prize and first author of the associated paper, 
-currently he is a contracting Research Engineer on OpenAI's Dangerous Capability Evaluations project.
-### Inverse Scaling: When Bigger isn't Better
+### Ian McKenzie: Inverse Scaling: When Bigger isn't Better
 
 Abstract: Work on scaling laws has found that large language models (LMs) show predictable improvements to overall loss with increased scale (model size, training data, and compute). I'll discuss the phenomenon of "inverse scaling": that LMs may show worse task performance with increased scale, e.g., due to flaws in the training objective and data. We collected empirical evidence of inverse scaling on 11 datasets collected by running a public contest, the Inverse Scaling Prize. Through analysis of the datasets, along with other examples found in the literature, we identified four potential causes of inverse scaling: (i) preference to repeat memorized sequences over following in-context instructions, (ii) imitation of undesirable patterns in the training data, (iii) tasks containing an easy distractor task which LMs could focus on, rather than the harder real task, and (iv) correct but misleading few-shot demonstrations of the task. Our tasks have helped drive the discovery of U-shaped and inverted-U scaling trends, where an initial trend reverses, suggesting that scaling trends are not always monotonic and that existing scaling laws less reliable at predicting the behavior of larger-scale models than previously understood. Our results suggest that there are tasks for which increased model scale alone may not lead to improved performance, and that more careful thought needs to go into the data and objectives for training language models.
-	    
+
+Ian McKenzie is the main organizer of the Inverse Scaling Prize and first author of the associated paper, 
+currently he is a contracting Research Engineer on OpenAI's Dangerous Capability Evaluations project.
+
+### Najoung Kim: Inverse scaling: mitigation strategies and open questions
+
+Abstract: The Inverse Scaling Competition (McKenzie et al. 2023) solicited downstream tasks whose performance inversely correlates with model and training data size, leading to discoveries of various tasks that exhibit this pattern. I will discuss one known inference-time solution to this problem of using task demonstrations---even one-shot in-context examples often suffice to change the scaling pattern of the task from inverse to U-shaped or flat (Wei et al. 2023). However, this solution does not generalize to inverse scaling problems in the broader scope that do not adhere to the specific task formulations adopted by McKenzie et al. (2023). As an example, I will discuss a finding where more pretraining data leads to less effective training of novel token representations in the context of compositional generalization (Kim et al. 2022), as well as other relevant observations in the recent literature pointing to a wider range of open questions.
+
 Dr. Kim is an Assistant Professor at Boston University and a researcher at
 Google. She is also one of the authors of the Inverse Scaling Prize paper as well as other foundational
 works in this field.
-### Inverse scaling: mitigation strategies and open questions
 
-Abstract: The Inverse Scaling Competition (McKenzie et al. 2023) solicited downstream tasks whose performance inversely correlates with model and training data size, leading to discoveries of various tasks that exhibit this pattern. I will discuss one known inference-time solution to this problem of using task demonstrations---even one-shot in-context examples often suffice to change the scaling pattern of the task from inverse to U-shaped or flat (Wei et al. 2023). However, this solution does not generalize to inverse scaling problems in the broader scope that do not adhere to the specific task formulations adopted by McKenzie et al. (2023). As an example, I will discuss a finding where more pretraining data leads to less effective training of novel token representations in the context of compositional generalization (Kim et al. 2022), as well as other relevant observations in the recent literature pointing to a wider range of open questions.
-      </section>
+</section>
       <section>
         <div class="speakers">
           <div class="speaker">
